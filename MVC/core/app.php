@@ -20,7 +20,7 @@
             unset($arr[0]);
         } 
         require_once "./MVC/controllers/".$this->controller.".php";   
-        
+        $this->controller = new $this->controller;
         // Xử lý phần Function
         if(isset($arr[1]))
         {

@@ -1,8 +1,9 @@
 <?php
-    class Home{
+    class Home extends controller {
         public function SayHi()
         {
-            echo "Day laf function SayHi";
+           $data = $this->model("SinhVienModel");
+           echo $data->GetSV();
         }
         public function Show()
         {

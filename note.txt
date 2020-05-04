@@ -1,0 +1,12 @@
+trong file index.php gọi đến file Bridge.ph ( nó là 1 file cầu nối giống như ông bảo vệ)
+trong file bridge.php nó lại gọi đên file app.php trong folder core.
+folder core sẽ chứa nhưngf gì k liên quan đến MVC
+file App.php sẽ xử lý thanh địa chỉ . Những gì khách hàng gõ lên đó.
+
+
+lesson 2: Bài 03
+Model : lấy dữ liệu từ database or đổ dữ liệu xuống database
+Tạo 1 file controller trong core. Mục đích dùng chung cho controllers
+controller sẽ gọi cái models và gọi vews
+tất cả các controllers sẽ thừ hưởng từ controller
+

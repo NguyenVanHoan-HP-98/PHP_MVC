@@ -1,5 +1,4 @@
 <?php
     require_once"./MVC/core/app.php";
-    $myApp = new App();
-
+    require_once"./MVC/core/controller.php";
 ?>
