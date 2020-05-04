@@ -5,9 +5,16 @@
            $data = $this->model("SinhVienModel");
            echo $data->GetSV();
         }
-        public function Show()
+        
+        public function Show($a,$b)
         {
-            echo "Day laf function Show";
+            // móc số 3 ra sài chơi
+            $data = $this->model("SinhVienModel");
+            $tong = $data->Tong($a,$b);
+
+
+            // đẩy số 3 sang bên view 
+            $this->view("lopngoai",["number"=>$tong,"page"=>'news']);
         }
     }
 
