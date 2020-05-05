@@ -14,7 +14,10 @@
 
 
             // đẩy số 3 sang bên view 
-            $this->view("lopngoai",["number"=>$tong,"page"=>'news']);
+            $this->view("lopngoai",["number"=>$tong,
+                                    "page"=>'news',
+                                    "SV"=>$data->SinhVien()
+                                    ]);
         }
     }
 

@@ -3,4 +3,18 @@
  echo "<pre>";
  print_r($data) ;
  echo "</pre>";
+ 
+
+ while($row = mysqli_fetch_array($data["SV"]))
+ {
+    echo "<pre>";
+    print_r($row) ;
+    echo "</pre>";
+ }
+
+ while($row = mysqli_fetch_array($data["SV"]))
+ {
+     echo $row["hoten"];
+     echo "<br>";
+ }
 ?>
